@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <script>
+      window.addEventListener("keydown", function(e) {
+        if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+            e.preventDefault();
+        }
+      }, false);
+    </script>
+  </head>
+  <body>
+    <script src="overallSketch.js"></script>
+    <script src="blockdude/block.js"></script>
+    <script src="blockdude/brick.js"></script>
+    <script src="blockdude/dude.js"></script>
+    <script src="blockdude/door.js"></script>
+    <script src="blockdude/message.js"></script>
+    <script src="blockdude/levels.js"></script>
+    <script src="blockdude/sketch.js"></script>
+    <script src="pegs/sketch.js"></script>
+    <div style="display: flex; justify-content: center;">
+      <div style="display: flex; flex-direction: column; padding: 20px; width: 700px;">
+        <h1>PuzzPack</h1>
+        <p class="subtitle">Original by <b>Brandon Sterner</b> of <b>Detached Solutions</b></p>
+        <p class="subtitle" style="margin-bottom: 15px;">Clone and extension levels by <b>Jack Boettcher</b></p>
+        <p>
+          Every real TI-84 enthusiast remembers PuzzPack. This is an HTML clone of the classic
+          calculator app with all 4 minigames. The game design and levels are taken directly from
+          that, but I've added some levels of my own. If you still have a working TI-84, I highly recommend
+          trying it out there too.
+        </p>
+        <p>
+          The console below is meant to emulate the experience on a TI-84 as closely as possible-- hence
+          the low resolution and delay in animation. I prefer this mode because it reminds me much more of
+          the original, but for those of you who want a cleaner interface, hit ENTER to toggle between the
+          two views.
+        </p>
+        <div id="centered" style="
+          padding: 30px 130px 300px 130px;
+        "></div>
+        <!-- <div id="pegs" style="
+          padding: 20px 0px 30px 0px;
+        "></div> -->
+      </div>
+      <!-- <div id="centered" style="padding: 50px 30px 50px 30px; background-color: rgb(202,203,205);"></div> -->
+    </div>
+  </body>
+</html>
